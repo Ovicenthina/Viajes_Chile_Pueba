@@ -5,5 +5,35 @@ html{
 body{
     background: #000000;
     font-family: 'Raleway', sans-serif;
-    font-weight: 400;
 }
+
+/*Navbar*/
+.navbar{
+    background-color:#318B99;
+    z-index: 1; 
+}
+
+.navbar-brand{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.nav-item a{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;  
+}
+
+/*Hr*/
+hr{
+    color:#318B99;
+}
+
+/*Quienes Somos*/
+#quienes_somos h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 300;
+}
+
+.container_icono{
+    background-color:  #318B99; 
+ }
