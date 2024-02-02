@@ -25,7 +25,9 @@ body{
 
 /*Carrousel*/
 .carousel-item img{
-    height: 20% !important;
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
 }
 
 /*Hr*/
