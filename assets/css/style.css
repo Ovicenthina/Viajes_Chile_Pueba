@@ -23,6 +23,11 @@ body{
     font-weight: 500;  
 }
 
+/*Carrousel*/
+.carousel-item img{
+    height: 20% !important;
+}
+
 /*Hr*/
 hr{
     color:#318B99;
