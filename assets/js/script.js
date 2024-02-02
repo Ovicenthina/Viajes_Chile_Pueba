@@ -3,11 +3,6 @@ $(document).ready(function() {
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     
-    //Función para generar un alert al presionar enviar con el evento click
-    $("#enviarMensaje").first().click (function(){
-        alert("El mensaje fue enviado correctamente")
-    })
-    
     //Función para que en un intervalo de 5000' se cambie la foto del carrousel
     $('#carouselExampleAutoplaying').carousel({
         interval: 5000
@@ -29,6 +24,18 @@ $(document).ready(function() {
           });
         } 
       });
+
+    //Función para generar un alert al presionar enviar y limpiar los campos del formulario
+    $("#formulario").submit (function(event){
+        event.preventDefault();
+
+        alert("El mensaje fue enviado correctamente")
+
+        //Limpia los campos del formulario
+        $("#nombre").val('');
+        $("#asunto").val('');
+        $("#mensaje").val('');
+    });
 
     });
 
